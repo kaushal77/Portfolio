@@ -286,6 +286,8 @@ header.sticky{
 	border-radius: 12px;
 }
 .layer{
+	overflow: auto;
+	/* word-wrap: break-word; */
 	padding: 8%;
 	background: transparent;
 	height: 100%;
@@ -525,6 +527,14 @@ header.sticky{
 	#menu-icon{
 		display: block;
 	}
+	.layer{
+		word-wrap: break-word;
+		overflow: auto;
+	}
+	.layer ul{
+		padding:0px 0px !important;
+	}
+
 	.home{
 		min-height: 80vh;
 	}
@@ -540,7 +550,7 @@ header.sticky{
 	}
 	.navlist a{
 		display: block;
-		padding: 1.2rem;
+		padding-right: 1.2rem;
 		margin: 1.5rem;
 		border-right: 2px solid var(--bg-color);
 		color: var(--bg-color);
@@ -555,6 +565,7 @@ header.sticky{
 	.navlist.active{
 		top: 100%;
 	}
+	
 }
 
 @media (max-width: 800px){
@@ -587,6 +598,9 @@ header.sticky{
 	section{
 		padding: 65px 3%;
 		transition: .3s;
+	}
+	.contact{
+		padding: 20px 0px;
 	}
 }
 @media (max-width: 540px){
